@@ -168,3 +168,11 @@ npm-version:
 	@$(call CHECK_VERSION, $(CSSLINT))
 	@$(call CHECK_VERSION, $(STYLELINT))
 	@$(call CHECK_VERSION, $(LESSC), | cut -d ' ' -f 2)
+
+# target: upgrade-responsive-menu - Upgrade LESS module - Responsive menu
+.PHONY: upgrade-responsive-menu
+upgrade-responsive-menu:
+	@$(call HELPTEXT,$@)
+	npm update desinax-responsive-menu
+	cp node_modules/desinax-responsive-menu/src/less/responsive-menu.less modules/
+	cp node_modules/desinax-responsive-menu/src/js/responsive-menu.js js/

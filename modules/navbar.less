@@ -1,0 +1,48 @@
+.site-header {
+    background-color: @dark-background;
+
+    .site-logo-text {
+        padding: 20px;
+        display: inline-block;
+        font-size: 32px;
+
+        a {
+            color: @dark-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.border {
+    border-radius: 3px;
+    border: 1px solid darken(@dark-background, 15%);
+}
+
+.navbar2 {
+    margin: 0;
+    float: right;
+    height: 100%;
+    display: block;
+
+    li {
+        background-color: darken(@dark-background, 10%);
+        color: @dark-color;
+        a {
+            padding: 30px 25px;
+        }
+        a:first-child {
+            margin-left: -4px;
+        }
+        a:hover {
+            text-decoration: none;
+            background-color: lighten(@dark-background, 10%);
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .navbar2 {
+        display: none;
+    }
+}
+
