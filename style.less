@@ -1,21 +1,62 @@
 /** 
 * Anax Flat theme.
 */
-@import url(modules.less);
+@import url(base.less);
 
+@back_color: #4264A2;
+@navbar_color: #092862;
+@footer_color: #1E0C66;
+@contrasted_text_color: #fff;
+@text_color: #fff;
+@link_color: darken(@text_color, 30%);
+@accent_color: #005C52;
+@code_bg: #bbb;
+@navbar_text: #fff;
+@fontFamilyHeadings:  @fontFamilyArial;
+@fontFamilyBody:      'Roboto', sans-serif;
+@fontFamilyCode:      @fontFamilyMonospace;
 
-
-/** --------------------------------------------------------------
- *  Logo images
- */
-.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
+html {
+    background-color: @back_color;
+    color: @text_color;
+}
+body {
+    font-family: @fontFamilyBody;
+    
+}
+.inner-wrap-header {
+    background-color: @navbar_color;
+    .navbar2 ul li a {
+        color: @navbar_text;
+        &:hover {
+            background-color: lighten(@navbar_color, 10%);
+        }
+    }
+    .site-header .site-logo-text a {
+        color: @navbar_text;
+        
+    }
 }
 
-.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
+body {
+    h1 {
+        border-bottom: 10px solid @accent_color;
     }
+    code {
+        background-color: @code_bg;
+    }
+}
+
+.inner-wrap-footer {
+    background-color: @footer_color;
+    color: @contrasted_text_color;
+    a {
+        color: @link_color;
+    }
+}
+
+.color-example {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
 }
