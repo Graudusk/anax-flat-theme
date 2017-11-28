@@ -3,15 +3,17 @@
 */
 @import url(base.less);
 
-@back_color: #4264A2;
-@navbar_color: #092862;
-@footer_color: #1E0C66;
-@contrasted_text_color: #fff;
-@text_color: #fff;
+@back_color: #fff;
+@navbar_color: #ddd;
+@navbar_text: #555;
+@footer_color: #ccc;
+@contrasted_text_color: #555;
+@text_color: #555;
 @link_color: darken(@text_color, 30%);
-@accent_color: #005C52;
-@code_bg: #bbb;
-@navbar_text: #fff;
+@accent_color: #555;
+@code_bg: #ddd;
+
+
 @fontFamilyHeadings:  @fontFamilyArial;
 @fontFamilyBody:      'Roboto', sans-serif;
 @fontFamilyCode:      @fontFamilyMonospace;
@@ -22,19 +24,28 @@ html {
 }
 body {
     font-family: @fontFamilyBody;
-    
+    a {
+        color: @link_color;
+    }
 }
 .inner-wrap-header {
     background-color: @navbar_color;
-    .navbar2 ul li a {
-        color: @navbar_text;
-        &:hover {
-            background-color: lighten(@navbar_color, 10%);
+
+    .site-logo-text {
+        .column(3);
+        a {
+            color: @navbar_text;
         }
     }
-    .site-header .site-logo-text a {
-        color: @navbar_text;
-        
+
+    .navbar2 {
+        .column(9);
+        ul li a {
+            color: @navbar_text;
+            &:hover {
+                background-color: lighten(@navbar_color, 10%);
+            }
+        }
     }
 }
 
