@@ -1,0 +1,54 @@
+/** 
+* Anax Flat theme.
+*/
+@import url(style.less);
+
+@back_color: #001B1B;
+@navbar_color: #021010;
+@footer_color: #082E2E;
+@contrasted_text_color: #ddd;
+@text_color: #ddd;
+@navbar_text: #ddd;
+@link_color: darken(@text_color, 30%);
+@accent_color: #396969;
+@code_bg: #222;
+
+html{
+    background: linear-gradient(to bottom,#001B1B,#003535,#001B1B);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.wrap-all {
+    width: 100%;
+}
+
+.outer-wrap-header, .outer-wrap-footer {
+    background-image: url(img/2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.inner-wrap-header {
+    background: linear-gradient(to bottom, #021010,#031818);
+    border: 3px black solid;
+    border-top: none;
+}
+
+.outer-wrap-flash{
+    display: none;
+}
+
+.inner-wrap-main {
+    border: solid 3px black;
+}
+
+.inner-wrap-footer {
+    background: linear-gradient(to top,#003535,#082E2E);
+    border: 3px black solid;
+    border-bottom: none;
+    .footer.site-footer {
+        border-top: 3px solid black;
+    }
+}
