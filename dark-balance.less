@@ -1,0 +1,74 @@
+/** 
+* Anax Flat theme.
+*/
+@import url(style.less);
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+@back_color: #001B1B;
+@navbar_color: #021010;
+@footer_color: #082E2E;
+@contrasted_text_color: #ddd;
+@text_color: #ddd;
+@link_color: @text_color;
+@accent_color: #00cdff;
+@code_bg: #222;
+
+html {
+    text-align: center;
+    background-image: url('../img/7.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: #000 1px 1px 1px;
+}
+
+body {
+    font-family: "Raleway",sans-serif;
+    background-color: transparent;
+
+    // background: linear-gradient(to right,rgba(0, 0, 0, 0.15), rgb(0, 0, 0), rgba(0, 0, 0, 0.15))
+    background: linear-gradient(to right,rgba(0, 205, 255, 0.2), rgb(0, 0, 0), rgba(0, 205, 255, 0.2));
+}
+
+.outer-wrap-flash{
+    display: none;
+}
+
+.figure {
+    border-color: @accent_color!important;
+}
+
+.inner-wrap-header {
+    background-color: rgba(2,16,16,.93);
+    box-shadow: rgb(0, 205, 255) 0px 0px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .site-logo-text a {
+        color: @link_color;
+    }
+    .site-header {
+        background-color: transparent !important;
+        text-align: center;
+        .site-logo-text {
+            display: block;
+            float: none;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .navbar2 ul li a {
+            color: @link_color;
+        }
+    }
+}
+
+.inner-wrap.inner-wrap-after-main {
+    .figure {
+        margin: 0 auto;
+        border: 0;
+    }
+}
+
+.inner-wrap-footer {
+    background-color: transparent;
+}

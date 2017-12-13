@@ -1,0 +1,63 @@
+/** 
+* Anax Flat theme.
+*/
+@import url(style.less);
+
+@back_color: #f0f0f0;
+@navbar_color: #ccc;
+@footer_color: #6195e4;
+@contrasted_text_color: #333;
+@text_color: #333;
+@link_color: darken(@text_color, 30%);
+@accent_color: #396969;
+@code_bg: #777;
+
+html {
+    // text-shadow: #777 1px 1px 1px;
+}
+
+.inner-wrap-header {
+    box-shadow: 2px 3px 3px 1px #999;
+    border-left: 10px solid #bbb;
+    border-bottom: 7px solid #888;
+}
+
+.inner-wrap-main {
+    box-shadow: 4px 2px 5px 0 #440f0fb3  inset;
+    background-color: #c63333;
+    color: #ddd;
+    border-right: 10px solid #dd4646;
+    border-top: 7px solid #9b2121;
+    box-sizing: border-box;
+    padding: 15px;
+    h1 {
+        border-bottom: 10px solid #ddd;
+    }
+}
+
+.inner-wrap.inner-wrap-after-main {
+    box-sizing: border-box;
+    padding: 48px 24px;
+    font-family: calibri;
+    font-size: 24px;
+
+    .figure {
+        margin: 0 auto;
+        border: 0;
+    }
+}
+
+.figure {
+    border: 0;
+}
+
+.outer-wrap-flash{
+    display: none;
+}
+
+.inner-wrap-footer {
+    box-shadow: 2px 3px 3px 1px #777;
+    border-left: 10px solid #80adf3;
+    border-bottom: 7px solid #456ead;
+    margin-bottom: @magicNumber * 2;
+}
